@@ -82,8 +82,7 @@ module.exports = function(config) {
     _config.browsers = ['ChromeHeadlessNoSandbox'];
     _config.singleRun = true;
     _config.concurrency = 1;
-    _config.browserDisconnectTimeout = 25000;
-    _config.browserNoActivityTimeout = 25000;
+    _config.browserNoActivityTimeout = 22000;
   }
  
   config.set(_config);
