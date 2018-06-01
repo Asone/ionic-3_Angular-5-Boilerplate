@@ -29,7 +29,7 @@
     "npm install",
     "bower update"
   ],
-  "node_js": "8.11",
+  "node_js": "6.10.3",
   "language": "node_js",
   "before_script": [
     "wget http://dl.google.com/android/android-sdk_r24.4-linux.tgz",
@@ -46,23 +46,6 @@
     "sudo chmod 4755 /opt/google/chrome/chrome-sandbox",
     "export CHROME_BIN=chromium-browser",
     "export DISPLAY=:99.0",
-<<<<<<< HEAD
     "sh -e /etc/init.d/xvfb start"
-<<<<<<< HEAD
-  ],
-  "script": [
-    "cordova prepare",
-    "npm test",
-    "ionic build"
-  ],
-  "os": "linux",
-  "group": "stable",
-  "dist": "trusty"
-=======
-=======
-    "sh -e /etc/init.d/xvfb start",
-    "sleep 3"
->>>>>>> add some sleep to give xvfb some time to sleep
   ]
->>>>>>> rebase and fix
 }
