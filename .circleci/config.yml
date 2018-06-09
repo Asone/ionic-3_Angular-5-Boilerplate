@@ -10,7 +10,7 @@ jobs:
           command : npm i -g cordova
       - run: 
           name: Rebuild node-sass to avoid install problems
-          run: npm rebuild node-sass --force  
+          command: npm rebuild node-sass --force  
       - run:
           name : Install ionic
           command : npm i -g ionic
