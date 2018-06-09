@@ -6,11 +6,11 @@ jobs:
     steps:
       - checkout
       - run: 
-        name : Install cordova
-        command : npm i -g cordova
+          name : Install cordova
+          command : npm i -g cordova
       - run: 
-        name : Install ionic
-        command : npm i -g ionic
+          name : Install ionic
+          command : npm i -g ionic
       - run:
           name: Install node modules
           command: npm install
