@@ -9,6 +9,9 @@ jobs:
           name : Install cordova
           command : npm i -g cordova
       - run: 
+        name : see work dir
+        command : ls -la
+      - run: 
           name: Rebuild node-sass to avoid install problems
           command: npm rebuild node-sass --force  
       - run:
