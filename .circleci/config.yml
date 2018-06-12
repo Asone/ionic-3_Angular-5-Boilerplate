@@ -4,6 +4,9 @@ jobs:
     working_directory: ~/project
     docker:
       - image:  node:alpine
+      - image: circleci/python:3.4.6-browsers
+        environment:
+          CHROME_BIN: "/usr/bin/google-chrome"
     steps:
       - checkout
       - run: 
