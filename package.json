@@ -114,8 +114,7 @@
         "DEEPLINK_5_SCHEME": " ",
         "DEEPLINK_5_HOST": " "
       },
-      "com.telerik.plugins.nativepagetransitions": {},
-      "MyPlugin": {}
+      "com.telerik.plugins.nativepagetransitions": {}
     },
     "platforms": [
       "browser",
