@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/project
     docker:
-      - image: circleci/node:chakracore-browsers
+      - image: circleci/node:8.11.3-jessie-browsers
     steps:
       - checkout
       - run: 
