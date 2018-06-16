@@ -25,6 +25,9 @@ jobs:
           name: Install node modules
           command: npm install
       - run:
+          name: echoing node env process var
+          command: echo $NODE_ENV
+      - run:
           name: Run unit tests
           command: npm test
       - run:
