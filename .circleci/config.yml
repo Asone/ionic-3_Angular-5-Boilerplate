@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/project
     docker:
-        - circleci/node:chakracore-8.11.1-browsers
+      - image: circleci/node:chakracore-8.11.1-browsers
     steps:
       - checkout
       - run: 
