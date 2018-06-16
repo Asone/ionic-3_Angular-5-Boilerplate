@@ -12,6 +12,9 @@ jobs:
       - run: 
           name: Cleaning npm cache
           command: npm cache clean --force
+      - run:
+          name: packages update
+          command: sudo apt-get update
       - run: 
           name : Install cordova
           command : npm i -g cordova
