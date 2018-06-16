@@ -4,6 +4,8 @@ jobs:
     working_directory: ~/project
     docker:
       - image: circleci/node:8.11.3-jessie-browsers
+    environment:
+      - NODE_ENV: "circleci"
     steps:
       - checkout
       - run: 
