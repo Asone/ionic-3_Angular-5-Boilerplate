@@ -99,6 +99,7 @@
     </plugin>
     <plugin name="com.telerik.plugins.nativepagetransitions" spec="^0.6.5" />
     <engine name="browser" spec="~5.0.3" />
-    <engine name="android" spec="~7.0.0" />
     <engine name="ios" spec="^4.5.4" />
+    <engine name="android" spec="~7.0.0" />
+    <allow-navigation href="http://192.168.0.23:8100" />
 </widget>
