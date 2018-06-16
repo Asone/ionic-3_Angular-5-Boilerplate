@@ -4,7 +4,7 @@ jobs:
     working_directory: ~/project
     docker:
       - image:  node:alpine
-      - image: circleci/node:10-jessie-browsers
+      - image: selenium/standalone-chrome:3.1.0
         environment:
           CHROME_BIN: "/usr/bin/google-chrome"
     steps:
