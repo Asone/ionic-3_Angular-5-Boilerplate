@@ -11,7 +11,7 @@ jobs:
           command: npm cache clean --force
       - run: 
           name : Install cordova
-          command : npm i -g cordova
+          command : sudo npm i -g cordova
       - run: 
           name : see work dir
           command : ls -la
@@ -20,7 +20,7 @@ jobs:
           command: npm rebuild node-sass --force  
       - run:
           name : Install ionic
-          command : npm i -g ionic
+          command : sudo npm i -g ionic
       - run:
           name: Install node modules
           command: npm install
