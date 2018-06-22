@@ -15,9 +15,6 @@ jobs:
           name : Install cordova
           command : sudo npm i -g cordova
       - run: 
-          name : see work dir
-          command : ls -la
-      - run: 
           name: Rebuild node-sass to avoid install problems
           command: npm rebuild node-sass --force  
       - run:
@@ -26,9 +23,6 @@ jobs:
       - run:
           name: Install node modules
           command: npm install
-      - run:
-          name: echoing node env process var
-          command: echo $NODE_ENV
       - run:
           name: Run unit tests
           command: npm test
