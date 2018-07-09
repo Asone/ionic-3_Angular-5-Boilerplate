@@ -1,12 +1,12 @@
 webpackJsonp([0],{
 
-/***/ 299:
+/***/ 300:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePageModule", function() { return HomePageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Home_page__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Home_page__ = __webpack_require__(211);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_shared_module__ = __webpack_require__(51);
@@ -20,6 +20,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+/**
+ * NgModule for Homepage
+ */
 var HomePageModule = (function () {
     function HomePageModule() {
     }

@@ -83,7 +83,7 @@ var map = {
 		161
 	],
 	"../_Pages/Home/Home.page.module": [
-		299,
+		300,
 		0
 	],
 	"../_Pages/Tabs/Tabs.page.module": [
@@ -115,7 +115,7 @@ module.exports = webpackAsyncContext;
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutPageModule", function() { return AboutPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__About_page__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__About_page__ = __webpack_require__(257);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_shared_module__ = __webpack_require__(51);
@@ -129,6 +129,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+/**
+ * NgModule for Articles page
+ */
 var AboutPageModule = (function () {
     function AboutPageModule() {
     }
@@ -159,10 +162,11 @@ var AboutPageModule = (function () {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticlesPageModule", function() { return ArticlesPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Articles_page__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Articles_page__ = __webpack_require__(258);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_shared_module__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Components_Article_Article_component__ = __webpack_require__(259);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -173,13 +177,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var ArticlesPageModule = (function () {
     function ArticlesPageModule() {
     }
     ArticlesPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_0__Articles_page__["a" /* ArticlesPage */]
+                __WEBPACK_IMPORTED_MODULE_0__Articles_page__["a" /* ArticlesPage */],
+                __WEBPACK_IMPORTED_MODULE_4__Components_Article_Article_component__["a" /* ArticleComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_0__Articles_page__["a" /* ArticlesPage */]),
@@ -264,7 +270,7 @@ var TabsPage = (function () {
         this.tab4Root = 'projects';
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/App/src/_Pages/Tabs/Tabs.page.html"*/'\n<ion-tabs>\n  <ion-tab [root]="tab1Root"  tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root"  tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root"  tabIcon="contacts"></ion-tab>\n  <ion-tab [root]="tab4Root"  tabIcon="folder"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/App/src/_Pages/Tabs/Tabs.page.html"*/,
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/Tabs/Tabs.page.html"*/'\n<ion-tabs>\n  <ion-tab [root]="tab1Root"  tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root"  tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root"  tabIcon="contacts"></ion-tab>\n  <ion-tab [root]="tab4Root"  tabIcon="folder"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/Tabs/Tabs.page.html"*/,
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -317,117 +323,6 @@ var WelcomePageModule = (function () {
 /***/ }),
 
 /***/ 209:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Tabs_Tabs_page__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Services_Auth_auth_service__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Welcome_welcome_page__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home_Home_page__ = __webpack_require__(212);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-var MainPage = (function () {
-    function MainPage(_authService, _nav) {
-        this._authService = _authService;
-        this._nav = _nav;
-        // this tells the tabs component which Pages
-        // should be each tab's root Page
-        this.TabsPage = __WEBPACK_IMPORTED_MODULE_1__Tabs_Tabs_page__["a" /* TabsPage */];
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_1__Tabs_Tabs_page__["a" /* TabsPage */];
-    }
-    MainPage_1 = MainPage;
-    MainPage.prototype.ngOnInit = function () {
-        if (this._authService.state) {
-            this.rootPage = MainPage_1;
-        }
-        else {
-            this.rootPage = __WEBPACK_IMPORTED_MODULE_3__Welcome_welcome_page__["a" /* WelcomePage */];
-        }
-    };
-    MainPage.prototype.openPage = function (page) {
-        var comp;
-        switch (page) {
-            case 'WelcomePage':
-                comp = __WEBPACK_IMPORTED_MODULE_3__Welcome_welcome_page__["a" /* WelcomePage */];
-                break;
-            case 'HomePage':
-                comp = __WEBPACK_IMPORTED_MODULE_5__Home_Home_page__["a" /* HomePage */];
-                break;
-            default:
-                comp = MainPage_1;
-        }
-        this._nav.setRoot(comp);
-    };
-    MainPage = MainPage_1 = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/App/src/_Pages/Main/main.page.html"*/'  <ion-nav #maincontent [root]="rootPage"></ion-nav>'/*ion-inline-end:"/App/src/_Pages/Main/main.page.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__Services_Auth_auth_service__["a" /* AuthService */],
-            __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["g" /* NavController */]])
-    ], MainPage);
-    return MainPage;
-    var MainPage_1;
-}());
-
-//# sourceMappingURL=main.component.js.map
-
-/***/ }),
-
-/***/ 210:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthAPI; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(208);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AuthAPI = (function () {
-    function AuthAPI(http) {
-        var _this = this;
-        this.http = http;
-        this.resume = function (session) {
-            var uri = "http://www.google.fr";
-            // make http call here
-            return _this.http.post(uri, session).toPromise();
-        };
-    }
-    AuthAPI = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
-    ], AuthAPI);
-    return AuthAPI;
-}());
-
-//# sourceMappingURL=auth.api.service.js.map
-
-/***/ }),
-
-/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -494,7 +389,46 @@ var SessionService = (function () {
 
 /***/ }),
 
-/***/ 212:
+/***/ 210:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthAPI; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(208);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AuthAPI = (function () {
+    function AuthAPI(http) {
+        var _this = this;
+        this.http = http;
+        this.resume = function (session) {
+            var uri = "http://www.google.fr";
+            // make http call here
+            return _this.http.post(uri, session).toPromise();
+        };
+    }
+    AuthAPI = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
+    ], AuthAPI);
+    return AuthAPI;
+}());
+
+//# sourceMappingURL=auth.api.service.js.map
+
+/***/ }),
+
+/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -518,7 +452,7 @@ var HomePage = (function () {
     HomePage.prototype.ngOnInit = function () { };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/App/src/_Pages/Home/Home.page.html"*/'<ion-content padding>\n    <ion-grid>\n        <ion-row>\n            <ion-title>HomePage</ion-title>\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/App/src/_Pages/Home/Home.page.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/Home/Home.page.html"*/'<ion-header>\n    <ion-title>Homepage</ion-title>\n</ion-header>\n<ion-content padding>\n    <ion-grid>\n        <ion-row>\n            <h1>Another Ionic 3 &amp; Angular 5 Boilerplate</h1>\n            \n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/Home/Home.page.html"*/,
         }),
         __metadata("design:paramtypes", [])
     ], HomePage);
@@ -529,13 +463,13 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 213:
+/***/ 212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(232);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -543,7 +477,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 233:
+/***/ 232:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -558,9 +492,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_common_http__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(296);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Pages_Main_main_component__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Pages_Main_main_component__ = __webpack_require__(298);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__Pages_Welcome_welcome_page__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__Services_Session__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__Services_Session__ = __webpack_require__(299);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__Services_Auth_auth_service__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__Services_Auth_auth_api_service__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__Pages_Articles_Articles_page_module__ = __webpack_require__(161);
@@ -710,7 +644,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 258:
+/***/ 257:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -734,7 +668,7 @@ var AboutPage = (function () {
     }
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'Page[about]',template:/*ion-inline-start:"/App/src/_Pages/About/About.page.html"*/'\n\n<ion-content padding>\n    <h2>About</h2>\n</ion-content>\n'/*ion-inline-end:"/App/src/_Pages/About/About.page.html"*/,
+            selector: 'Page[about]',template:/*ion-inline-start:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/About/About.page.html"*/'\n\n<ion-content padding>\n    <h2>About</h2>\n</ion-content>\n'/*ion-inline-end:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/About/About.page.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
     ], AboutPage);
@@ -745,7 +679,7 @@ var AboutPage = (function () {
 
 /***/ }),
 
-/***/ 259:
+/***/ 258:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -777,7 +711,7 @@ var ArticlesPage = (function () {
     };
     ArticlesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'Page[article]',template:/*ion-inline-start:"/App/src/_Pages/Articles/Articles.page.html"*/'<ion-content>\n    <ion-grid>\n        <ion-row>\n            <ion-col col-12>\n                <h2>Articles</h2>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col col-12>\n                <ng-template *ngIf="articles.length > 0; then articlesList; else noArticles"></ng-template>\n                <ng-template #projectsList>\n                <ion-card *ngFor="let article of articles; let index = i" (click)="goto(project.id)">\n                        <ion-card-content>\n                            <ion-card-title>\n                                {{article.title}}\n                            </ion-card-title>\n                            <p>\n                                {{article.excerpt}}\n                            </p>\n                        </ion-card-content>\n                    </ion-card>\n            </ng-template>\n            <ng-template #noProject>\n                <div class="alert alert-info">Aucun projet n\'a été trouvé</div>\n            </ng-template>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/App/src/_Pages/Articles/Articles.page.html"*/
+            selector: 'Page[article]',template:/*ion-inline-start:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/Articles/Articles.page.html"*/'<ion-content>\n    <ion-grid>\n        <ion-row>\n            <ion-col col-12>\n                <h2>Articles</h2>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col col-12>\n                <ng-template *ngIf="articles.length > 0; then articlesList; else noArticles"></ng-template>\n                <ng-template #projectsList>\n                <ion-card *ngFor="let article of articles; let index = i" (click)="goto(project.id)">\n                        <ion-card-content>\n                            <ion-card-title>\n                                {{article.title}}\n                            </ion-card-title>\n                            <p>\n                                {{article.excerpt}}\n                            </p>\n                        </ion-card-content>\n                    </ion-card>\n            </ng-template>\n            <ng-template #noProject>\n                <div class="alert alert-info">Aucun projet n\'a été trouvé</div>\n            </ng-template>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/Articles/Articles.page.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Config */]])
@@ -786,6 +720,41 @@ var ArticlesPage = (function () {
 }());
 
 //# sourceMappingURL=Articles.page.js.map
+
+/***/ }),
+
+/***/ 259:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArticleComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Component for rendering articles
+ */
+var ArticleComponent = (function () {
+    function ArticleComponent() {
+    }
+    ArticleComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'Article',template:/*ion-inline-start:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Components/Article/Article.component.html"*/''/*ion-inline-end:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Components/Article/Article.component.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArticleComponent);
+    return ArticleComponent;
+}());
+
+//# sourceMappingURL=Article.component.js.map
 
 /***/ }),
 
@@ -798,9 +767,8 @@ var ArticlesPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Pages_Main_main_component__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Services_Session_session_service__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Services_Auth_auth_service__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Services_Session_session_service__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Services_Auth_auth_service__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -817,14 +785,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /** Ionic Modules **/
 
 
-/** Custom Components **/
-
 /** Custom Services **/
 
 
+/**
+ * Root component for the Application
+ */
 var MyApp = (function () {
     function MyApp(platform, statusBar, menuController, splashScreen, _sessionService, _authService) {
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__Pages_Main_main_component__["a" /* MainPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
@@ -837,14 +806,14 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */])
     ], MyApp.prototype, "content", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/App/src/app/app.html"*/'\n<ion-nav #rootcontent [root]="rootPage"></ion-nav>\n\n\n'/*ion-inline-end:"/App/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/app/app.html"*/'\n<ion-nav #rootcontent [root]="rootPage"></ion-nav>\n\n\n'/*ion-inline-end:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-            __WEBPACK_IMPORTED_MODULE_5__Services_Session_session_service__["a" /* SessionService */],
-            __WEBPACK_IMPORTED_MODULE_6__Services_Auth_auth_service__["a" /* AuthService */]])
+            __WEBPACK_IMPORTED_MODULE_4__Services_Session_session_service__["a" /* SessionService */],
+            __WEBPACK_IMPORTED_MODULE_5__Services_Auth_auth_service__["a" /* AuthService */]])
     ], MyApp);
     return MyApp;
 }());
@@ -857,7 +826,79 @@ var MyApp = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__session_service__ = __webpack_require__(211);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Tabs_Tabs_page__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Services_Auth_auth_service__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Welcome_welcome_page__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home_Home_page__ = __webpack_require__(211);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var MainPage = (function () {
+    function MainPage(_authService, _nav) {
+        this._authService = _authService;
+        this._nav = _nav;
+        // this tells the tabs component which Pages
+        // should be each tab's root Page
+        this.TabsPage = __WEBPACK_IMPORTED_MODULE_1__Tabs_Tabs_page__["a" /* TabsPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_1__Tabs_Tabs_page__["a" /* TabsPage */];
+    }
+    MainPage_1 = MainPage;
+    MainPage.prototype.ngOnInit = function () {
+        if (this._authService.state) {
+            this.rootPage = MainPage_1;
+        }
+        else {
+            this.rootPage = __WEBPACK_IMPORTED_MODULE_3__Welcome_welcome_page__["a" /* WelcomePage */];
+        }
+    };
+    MainPage.prototype.openPage = function (page) {
+        var comp;
+        switch (page) {
+            case 'WelcomePage':
+                comp = __WEBPACK_IMPORTED_MODULE_3__Welcome_welcome_page__["a" /* WelcomePage */];
+                break;
+            case 'HomePage':
+                comp = __WEBPACK_IMPORTED_MODULE_5__Home_Home_page__["a" /* HomePage */];
+                break;
+            default:
+                comp = MainPage_1;
+        }
+        this._nav.setRoot(comp);
+    };
+    MainPage = MainPage_1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/Main/main.page.html"*/'  <ion-nav #maincontent [root]="rootPage"></ion-nav>'/*ion-inline-end:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/Main/main.page.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__Services_Auth_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["g" /* NavController */]])
+    ], MainPage);
+    return MainPage;
+    var MainPage_1;
+}());
+
+//# sourceMappingURL=main.component.js.map
+
+/***/ }),
+
+/***/ 299:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__session_service__ = __webpack_require__(209);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__session_service__["a"]; });
 
 //# sourceMappingURL=index.js.map
@@ -920,7 +961,7 @@ var WelcomePage = (function () {
     };
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-welcome',template:/*ion-inline-start:"/App/src/_Pages/Welcome/welcome.page.html"*/'\n<ion-content padding>\n    <ion-grid>\n        <ion-row  text-center>\n                <ion-col col-6 offset-3 >\n                    <img src="../../assets/imgs/logo.png" alt="Logo" class="img"/>\n                </ion-col>\n                <ion-col col-12>\n                    <h2>Welcome !</h2>\n                </ion-col>\n                <button ion-button col-12 round (click)="gotoHome()">Browse pages</button>\n\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/App/src/_Pages/Welcome/welcome.page.html"*/,
+            selector: 'page-welcome',template:/*ion-inline-start:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/Welcome/welcome.page.html"*/'\n<ion-content padding>\n    <ion-grid>\n        <ion-row  text-center>\n                <ion-col col-6 offset-3 >\n                    <img src="../../assets/imgs/logo.png" alt="Logo" class="img"/>\n                </ion-col>\n                <ion-col col-12>\n                    <h2>Welcome !</h2>\n                </ion-col>\n                <button ion-button col-12 round (click)="gotoHome()">Browse pages</button>\n\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/herbin/www/ionic-3_Angular-5_Custom-Boilerplate/src/_Pages/Welcome/welcome.page.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
     ], WelcomePage);
@@ -931,5 +972,5 @@ var WelcomePage = (function () {
 
 /***/ })
 
-},[213]);
+},[212]);
 //# sourceMappingURL=main.js.map
