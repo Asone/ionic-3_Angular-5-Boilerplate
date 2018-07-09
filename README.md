@@ -1,7 +1,7 @@
 
 # Another Ionic 3 & Angular 5 Boilerplate
 
-[![Build Status](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate.svg?branch=master)](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate) [![](https://circleci.com/gh/Asone/ionic-3_Angular-5_Custom-Boilerplate.png?circle-token=:circle-toke)](https://circleci.com/gh/Asone/ionic-3_Angular-5_Custom-Boilerplate)
+[![Build Status](https://travis-ci.org/Asone/ionic-3_Angular-5-Boilerplate.svg?branch=master)](https://travis-ci.org/Asone/ionic-3_Angular-5-Boilerplate) [![](https://circleci.com/gh/Asone/ionic-3_Angular-5-Boilerplate.png?circle-token=:circle-toke)](https://circleci.com/gh/Asone/ionic-3_Angular-5-Boilerplate)
 
 The following repo provides a boilerplate for projects intended to be written with Ionic 3 & Angular 5. 
 
